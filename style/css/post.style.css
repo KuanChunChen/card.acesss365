@@ -1,0 +1,159 @@
+@font-face {
+  font-family: 'dotFace';
+  src: url('/assets/font/AppleIiScreenTypeface-2aP3.ttf')
+}
+
+.sub-container{
+
+  position:relative;
+  margin:0 auto;
+  max-width:1051px;
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-left:60px;
+  margin-bottom:16px;
+  background:#fff;
+  box-shadow:0 2px 4px rgba(0,0,0,0.2);
+  -webkit-animation:fade-in .5s;
+  animation:fade-in;
+  animation-duration:.5s;
+}
+
+.share-group{
+  height: 30px;
+}
+
+
+.share-item{
+  display: inline-block;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.fb-share-button{
+  display: inline-block;
+  margin: auto 0px;
+  vertical-align: middle;
+}
+
+.c-border-main-title h1 {
+  background-color:var(--primary-color);
+}
+.c-border-content-title-1 {
+  background-color:var(--secondary-color);
+  font-size:18px;
+  height:30px;
+  color:var(--secondary-color-more-1);
+}
+.c-border-content-title-2 {
+  background-color:var(--primary-color);
+}
+.c-border-content-title-3 {
+  background-color:var(--primary-color);
+}
+.c-border-content-title-4 {
+  background-color:var(--four-times-color);
+  font-size:16px;
+  height:26px;
+  color:var(--four-times-color-more-1);
+  font-weight: bold;
+  margin-top:10px;
+  border-radius: 15px 50px;
+}
+
+.c-border-content-title-5 {
+  font-family:dotFace;
+  background-color:white;
+  font-size:16px;
+  height:26px;
+  color:black;
+  text-align: center;
+}
+
+.c-center-box-1 {
+  font-size:14px;
+  border-radius:50px 15px;
+  border: 2px solid var(--primary-color);
+  width: 200px;
+  height:26px;
+  color:black;
+  text-align: center;
+  margin: 0 auto;
+
+}
+.c-center-box-warn {
+  font-size:14px;
+  border-radius:50px 15px;
+  border: 2px solid var(--five-times-color);
+  width: 200px;
+  height:26px;
+  color:black;
+  text-align: center;
+  margin: 0 auto;
+
+}
+.c-hint-background {
+  background-color:var(--five-times-color);
+  color:white;
+  font-style: bold;
+  margin-left: 25px;
+  margin-top: 0px;
+  width: auto;
+}
+
+.c-post-image-container {
+  margin:0px auto;
+  height: auto;
+  width: 480px;
+  position: relative;
+  box-shadow:0 2px 4px rgba(0,0,0,0.2);
+}
+
+.c-post-image-container .post-image{
+  position:relative;
+  display:block;
+  overflow:hidden;
+
+  width: auto;
+  height: auto;
+
+
+}
+.c-post-image-container .desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.c-center-box-number {
+  font-size:14px;
+  border-radius:50px 15px;
+  border: 2px solid var(--primary-color);
+  width: auto;
+  height:26px;
+  color:black;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  font-family:dotFace;
+
+}
+@media(max-width:1000px){
+  .sub-content{
+      margin:0 auto
+  }
+  .c-post-image-container{
+     width: 100%;
+    
+  }
+}
+
+@media(max-width:880px){
+  .sub-content{
+      margin:0 auto
+  }
+}
+
+@media(max-width:700px){
+  .sub-container{
+      padding:90px 25px 0
+  }
+}

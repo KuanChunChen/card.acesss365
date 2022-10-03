@@ -1,0 +1,251 @@
+.navbar-container{
+    position:relative;
+    width:1040px;
+    max-width:100%;
+    height:70px;
+    margin:0 auto
+}
+.navbar-logo{
+    font-size:22px;
+    line-height:22px;
+    position:absolute;
+    top:50%;
+    left:0;
+    display:block;
+    width:auto;
+    max-width:50%;
+    height:32px;
+    margin-top:-28px;
+    margin-left:25px;
+    text-decoration:none
+}
+.navbar-logo img{
+    width:auto;
+    height:56px;
+    outline:0
+}
+
+.navbar-menu{
+    z-index:10;
+    display:inline-block;
+    width:auto;
+    padding-right:5px
+}
+.navbar-menu a{
+    padding:0 15px;
+    font-size:15px
+}
+.navbar-menu a.current{
+    color:#eb5055
+}
+
+.navbar-search{
+    line-height:70px;
+    display:inline-block;
+    width:20px;
+    padding:0 40px 0 0;
+    cursor:pointer
+}
+.navbar-search:active>form,.navbar-search:focus>form,.navbar-search:hover>form{
+    overflow:inherit;
+    clip:inherit;
+    -webkit-transition:opacity .5s ease-in-out;
+    transition:opacity .5s ease-in-out;
+    opacity:1
+}
+.navbar-search:active>.icon-search,.navbar-search:focus>.icon-search,.navbar-search:hover>.icon-search{
+    color:#eb5055
+}
+.navbar-search form{
+    line-height:30px;
+    position:absolute;
+    top:50%;
+    right:0;
+    display:block;
+    overflow:hidden;
+    clip:rect(1px,1px,1px,1px);
+    width:auto;
+    max-width:60%;
+    height:30px;
+    margin-top:-15px;
+    padding-right:10px;
+    opacity:0
+}
+.navbar-search form .search-box{
+    line-height:30px;
+    position:relative;
+    top:-1px;
+    display:inline-block;
+    width:400px;
+    max-width:100%;
+    height:30px;
+    padding:0;
+    border:none;
+    border-radius:3px
+}
+.navbar-search form .search-box input{
+    font-size:14px;
+    line-height:30px;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:30px;
+    padding:0 40px 0 18px;
+    color:#313131;
+    border:1px solid #eb5055;
+    border-radius:20px;
+    outline:0;
+    background-color:#fff;
+    -webkit-appearance:none
+}
+
+a.navbar-logo span{
+    margin-top:-20px;
+    display:inline-block;
+    height:70px;
+    line-height:70px;
+    position:relative;
+    top:-16px;
+    color:#5E5E7A
+}
+
+/* @media(max-width:650px){
+    .navbar-menu{
+        display:none
+    }
+    .navbar-search{
+        padding:0 35px 0 0
+    }
+    .navbar-search form{
+        width:180px;
+        margin-right:55px
+    }
+    .navbar-mobile-menu{
+        display:inline-block
+    }
+}
+
+@media(max-width:580px){
+    .navbar-search form{
+        width:150px
+    }
+} */
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+  z-index:10;
+  display:inline-block;
+  width:auto;
+  padding-right:5px
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 0px 15px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.topnav a.current{
+    color:#eb5055
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.topnav a.icon {
+  position:absolute;
+  right: 0;
+  top: 0;
+  height:70px;
+}
+
+/* Dropdown container - needed to position the dropdown content */
+
+
+/* Add a dark background on topnav links and the dropdown button on hover */
+.topnav a:hover,{
+  background-color: #555;
+  color: white;
+}
+
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width:  650px) {
+
+  .topnav a, .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 650px) {
+  .topnav.responsive {
+    float: right;
+    margin-top: 70px;
+
+
+  }
+
+  .topnav.responsive a.icon {
+    position:absolute;
+    right: 0;
+    top: 0;
+    height:70px;
+
+  }
+  .topnav.responsive a.icon:active,.topnav.responsive a.icon:hover{
+      cursor:nw-resize;
+  }
+
+  .topnav.responsive a.icon:active,.topnav.responsive a.icon:hover{
+      -webkit-animation:pointer-ball .3s ease 1;
+      animation:pointer-ball .3s ease 1;
+      -webkit-animation-timing-function:cubic-bezier(.61,.04,.17,1.32);
+      animation-timing-function:cubic-bezier(.61,.04,.17,1.32)
+  }
+
+  .topnav.responsive a.icon,..topnav.responsive a.icon:hover{
+      -webkit-transform:rotateZ(360deg);
+      -ms-transform:rotateZ(360deg);
+      transform:rotateZ(360deg)
+  }
+
+  .topnav.responsive a {
+    float:none;
+    display:block;
+    text-align: right;
+    background-color:#eee
+  }
+  .topnav.responsive .dropdown {}
+  .topnav.responsive .dropbtn {
+    position: relative;
+    width:140px;
+    display: inline-block;
+    overflow-y: hidden;
+    z-index: 2;
+  }
+  .topnav.responsive .dropdown-content a:hover {background-color: #ddd;}
+  .topnav.responsive .dropdown-content a{
+
+    font-size:15px;
+    line-height:2.2;
+    display:block;
+    width:140px;
+    margin:0;
+    padding:8px 25px;
+    background-color:#eee;
+    overflow: hidden;
+  }
+
+}

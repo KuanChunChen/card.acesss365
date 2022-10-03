@@ -1,0 +1,25 @@
+name: "Credit Info"
+author:
+url: "https://mycreditinfo.biz"
+baseurl:
+resume_site:
+description:
+github_username:
+github:
+plugins: [jekyll-paginate]
+permalink: /:year-:month-:day-:title
+paginate: 12
+paginate_path: "/page/:num/"
+exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
+highlighter: rouge
+markdown: kramdown
+
+# Googke Service
+google-analytics: G-R2WDZ26F87
+
+# Facebook App ID
+facebook-appid: 871321987117414
+
+sass:
+  sass_dir: _sass
+  style: compressed

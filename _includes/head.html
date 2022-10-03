@@ -1,0 +1,36 @@
+<head>
+
+  {% if site.google-analytics %}
+    {% include analytics.html %}
+  {% endif %}
+
+  {% if site.facebook-appid %}
+    {% include util/facebook/meta-data.html %}
+  {% endif %}
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="Cache-Control" content="no-transform"/>
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <title>{{ page.title | default: site.name }}</title>
+	<meta name="description" content="{{site.meta_description}}">
+	<link rel="shortcut icon" href="{{ '/assets/images/logo_ico.png' | prepend: site.baseurl }}">
+    <link rel="apple-touch-icon" href="{{ '/assets/images/logo_ico.png' | prepend: site.baseurl }}"/>
+    <link href="{{ '/style/css/color.style.css' | prepend: site.baseurl }}" rel="stylesheet">
+    <link href="{{ '/style/css/highlight.min.css' | prepend: site.baseurl }}" rel="stylesheet">
+    <link href="{{ '/style/css/style.min.css' | prepend: site.baseurl }}" rel="stylesheet">
+    <link href="{{ '/style/css/post.style.css' | prepend: site.baseurl }}" rel="stylesheet">
+    <link href="{{ '/style/css/dropdown.style.css' | prepend: site.baseurl }}" rel="stylesheet">
+    <link href="{{ '/style/css/navbar.style.css' | prepend: site.baseurl }}" rel="stylesheet">
+	  <link rel="stylesheet" href="{{ '/style/css/iconfont/iconfont.css' | prepend: site.baseurl }}">
+  <!-- <link href="{% include main.scss %}" rel="stylesheet"> -->
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    {% include util/facebook/root-init.html %}
+
+</head>

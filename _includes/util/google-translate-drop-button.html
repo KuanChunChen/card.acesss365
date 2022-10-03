@@ -1,0 +1,13 @@
+<div class="dropdown notranslate">
+  <button class="dropbtn">Languages</button>
+  <div class="dropdown-content">
+    {% for item in translate_langs %}
+        <a href="#" class="lang-select" data-lang="{{ item.lang }}">
+          {% if item.img %}
+          {{ item.text }}
+          <img src="{{ item.img }}" title="{{ item.text }}">
+          {% endif %}
+        </a>
+    {% endfor %}
+  </div>
+</div>
